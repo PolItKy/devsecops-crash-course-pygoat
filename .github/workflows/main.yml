@@ -24,4 +24,4 @@ jobs:
         run: pip install bandit 
 
       - name: Run Bandit Scan # Run bandit in recursive mode to scan all files in app code
-        run: bandit -r . 
+        run: bandit -ll -ii -r . 
